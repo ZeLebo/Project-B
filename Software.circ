@@ -206,74 +206,93 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(800,190)" to="(810,190)"/>
     <wire from="(740,450)" to="(750,450)"/>
     <wire from="(190,260)" to="(190,320)"/>
-    <comp lib="3" loc="(130,580)" name="Comparator"/>
-    <comp lib="0" loc="(790,370)" name="Tunnel">
-      <a name="label" val="f5"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="0" loc="(140,580)" name="Tunnel">
-      <a name="label" val="f3"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="0" loc="(900,70)" name="Splitter">
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="8"/>
-      <a name="appear" val="center"/>
-      <a name="bit0" val="none"/>
-      <a name="bit1" val="none"/>
-      <a name="bit2" val="none"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
+    <comp lib="0" loc="(920,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val=" rightYin"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="1" loc="(220,360)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="6" loc="(832,361)" name="Text">
-      <a name="text" val="Note: "/>
-      <a name="font" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="1" loc="(710,410)" name="Controlled Buffer">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(80,620)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(250,210)" name="Tunnel">
-      <a name="label" val="rd_d"/>
+      <a name="label" val="addr"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
-    <comp lib="6" loc="(953,186)" name="Text">
-      <a name="text" val="the x coordinate of the ball"/>
-      <a name="valign" val="top"/>
-    </comp>
-    <comp lib="0" loc="(890,500)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val=" vxy"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(750,450)" name="Tunnel">
-      <a name="label" val="rd_d"/>
+    <comp lib="0" loc="(760,470)" name="Tunnel">
+      <a name="label" val="f3"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
-    <comp lib="1" loc="(430,470)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(580,660)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="clock"/>
+    <comp lib="0" loc="(780,350)" name="Tunnel">
+      <a name="label" val="rd_d"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
     <comp lib="6" loc="(755,23)" name="Text">
       <a name="text" val="new coordinate of the right bat read at address F3 is stored "/>
       <a name="valign" val="top"/>
     </comp>
-    <comp lib="6" loc="(917,367)" name="Text">
-      <a name="text" val="is read at the address F5"/>
+    <comp lib="0" loc="(250,300)" name="Tunnel">
+      <a name="label" val="data"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(140,680)" name="Tunnel">
+      <a name="label" val="f5"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="6" loc="(461,362)" name="Text">
+      <a name="text" val="data memory "/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+    <comp lib="1" loc="(770,200)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="label" val="IO-4"/>
+    </comp>
+    <comp lib="6" loc="(922,451)" name="Text">
+      <a name="text" val="ball's velocity is read at the address F3"/>
       <a name="valign" val="top"/>
+    </comp>
+    <comp lib="0" loc="(250,280)" name="Tunnel">
+      <a name="label" val="instr"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(140,630)" name="Tunnel">
+      <a name="label" val="f4"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="6" loc="(955,186)" name="Text">
+      <a name="text" val="the x coordinate of the ball"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="3" loc="(130,630)" name="Comparator"/>
+    <comp lib="6" loc="(716,44)" name="Text">
+      <a name="text" val="in the register and returned it to the controller "/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="0" loc="(390,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="data"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="1" loc="(710,460)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="label" val="IO-3"/>
+    </comp>
+    <comp lib="6" loc="(464,210)" name="Text">
+      <a name="text" val="instr memory "/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+    <comp lib="0" loc="(790,110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="f3"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
     <comp lib="4" loc="(530,260)" name="ROM">
       <a name="contents">addr/data: 8 8
@@ -293,38 +312,190 @@ e3 53 8f 12 e3 57 8f d0
 e3 6b 86 d1 f3 a6 ee
 </a>
     </comp>
-    <comp lib="0" loc="(820,210)" name="Tunnel">
-      <a name="label" val="f4"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="7" loc="(170,350)" name="CdM_8_mark5"/>
-    <comp lib="6" loc="(464,210)" name="Text">
-      <a name="text" val="instr memory "/>
-      <a name="font" val="SansSerif bold 14"/>
-    </comp>
-    <comp lib="0" loc="(250,280)" name="Tunnel">
-      <a name="label" val="instr"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="0" loc="(790,110)" name="Tunnel">
+    <comp lib="0" loc="(80,570)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="addr"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="1" loc="(610,220)" name="NOR Gate">
+      <a name="facing" val="west"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(140,580)" name="Tunnel">
       <a name="label" val="f3"/>
       <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(890,410)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val=" yball"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(890,70)" name="Register"/>
+    <comp lib="1" loc="(220,390)" name="Controlled Buffer">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="control" val="left"/>
+    </comp>
+    <comp lib="0" loc="(600,220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="port"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(70,590)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0xf3"/>
+    </comp>
+    <comp lib="6" loc="(832,361)" name="Text">
+      <a name="text" val="Note: "/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="1" loc="(740,360)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="label" val="IO-5"/>
     </comp>
     <comp lib="0" loc="(870,100)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="clock"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
-    <comp lib="0" loc="(140,630)" name="Tunnel">
-      <a name="label" val="f4"/>
+    <comp lib="0" loc="(580,670)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="clock"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(460,470)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="clock"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="1" loc="(740,260)" name="Controlled Buffer">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="7" loc="(170,350)" name="CdM_8_mark5"/>
+    <comp lib="0" loc="(250,250)" name="Tunnel">
+      <a name="label" val="wr_d"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="6" loc="(887,461)" name="Text">
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="1" loc="(840,100)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="label" val="IO-3"/>
+    </comp>
+    <comp lib="0" loc="(900,70)" name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="none"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+    </comp>
+    <comp lib="0" loc="(390,460)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="port"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="1" loc="(240,380)" name="Controlled Buffer">
+      <a name="width" val="8"/>
+      <a name="control" val="left"/>
+    </comp>
+    <comp lib="0" loc="(810,190)" name="Tunnel">
+      <a name="label" val="rd_d"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(800,90)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="wr_d"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="6" loc="(263,542)" name="Text">
+      <a name="text" val="comparing addresses with values F3, F4 and F5 for writing and reading data"/>
+    </comp>
+    <comp lib="0" loc="(750,450)" name="Tunnel">
+      <a name="label" val="rd_d"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
     <comp lib="3" loc="(130,680)" name="Comparator"/>
-    <comp lib="4" loc="(890,70)" name="Register"/>
-    <comp lib="6" loc="(461,362)" name="Text">
-      <a name="text" val="data memory "/>
-      <a name="font" val="SansSerif bold 14"/>
+    <comp lib="6" loc="(37,541)" name="Text">
+      <a name="text" val="Note: "/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="6" loc="(917,367)" name="Text">
+      <a name="text" val="is read at the address F5"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="0" loc="(80,670)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="addr"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(250,340)" name="Tunnel">
+      <a name="label" val="rd/wr"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="6" loc="(866,198)" name="Text">
+      <a name="text" val="Note: "/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="2" loc="(230,310)" name="Decoder">
+      <a name="disabled" val="0"/>
+    </comp>
+    <comp lib="0" loc="(440,320)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="instr"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="1" loc="(710,410)" name="Controlled Buffer">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(580,660)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="clock"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(70,640)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0xf4"/>
+    </comp>
+    <comp lib="0" loc="(70,690)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0xf5"/>
+    </comp>
+    <comp lib="0" loc="(320,360)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="8"/>
+      <a name="label" val="addr"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="0" loc="(790,370)" name="Tunnel">
+      <a name="label" val="f5"/>
+      <a name="labelfont" val="SansSerif plain 9"/>
+    </comp>
+    <comp lib="1" loc="(240,250)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="3" loc="(130,580)" name="Comparator"/>
+    <comp lib="1" loc="(430,470)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(951,204)" name="Text">
       <a name="text" val="is read at the address F4"/>
@@ -337,192 +508,24 @@ e3 6b 86 d1 f3 a6 ee
       <a name="label" val=" xball"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(840,100)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="label" val="IO-3"/>
+    <comp lib="6" loc="(587,161)" name="Text">
+      <a name="text" val="Note: "/>
+      <a name="font" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="1" loc="(710,460)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="label" val="IO-3"/>
-    </comp>
-    <comp lib="0" loc="(70,590)" name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0xf3"/>
-    </comp>
-    <comp lib="1" loc="(220,390)" name="Controlled Buffer">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-      <a name="control" val="left"/>
-    </comp>
-    <comp lib="0" loc="(80,620)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="addr"/>
+    <comp lib="0" loc="(820,210)" name="Tunnel">
+      <a name="label" val="f4"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
-    <comp lib="6" loc="(887,461)" name="Text">
+    <comp lib="6" loc="(919,349)" name="Text">
+      <a name="text" val="the y coordinate of the ball"/>
       <a name="valign" val="top"/>
-    </comp>
-    <comp lib="0" loc="(920,70)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="5"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val=" rightYin"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(760,470)" name="Tunnel">
-      <a name="label" val="f3"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="1" loc="(770,200)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="label" val="IO-4"/>
-    </comp>
-    <comp lib="0" loc="(80,570)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="addr"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="1" loc="(240,380)" name="Controlled Buffer">
-      <a name="width" val="8"/>
-      <a name="control" val="left"/>
-    </comp>
-    <comp lib="0" loc="(140,680)" name="Tunnel">
-      <a name="label" val="f5"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="6" loc="(255,541)" name="Text">
-      <a name="text" val="comparing addresses with values F3, F4 and F5 for writing and reading data"/>
     </comp>
     <comp lib="0" loc="(70,420)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="clock"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
-    <comp lib="6" loc="(581,35)" name="Text">
-      <a name="text" val="Note: "/>
-      <a name="font" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(390,460)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="port"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="1" loc="(680,500)" name="Controlled Buffer">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="6" loc="(802,464)" name="Text">
-      <a name="text" val="Note: "/>
-      <a name="font" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="0" loc="(810,190)" name="Tunnel">
-      <a name="label" val="rd_d"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="6" loc="(922,451)" name="Text">
-      <a name="text" val="ball's velocity is read at the address F3"/>
-      <a name="valign" val="top"/>
-    </comp>
-    <comp lib="0" loc="(800,90)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="wr_d"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="6" loc="(37,541)" name="Text">
-      <a name="text" val="Note: "/>
-      <a name="font" val="SansSerif bold 12"/>
-    </comp>
-    <comp lib="1" loc="(740,260)" name="Controlled Buffer">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="4" loc="(530,410)" name="RAM"/>
-    <comp lib="6" loc="(919,349)" name="Text">
-      <a name="text" val="the y coordinate of the ball"/>
-      <a name="valign" val="top"/>
-    </comp>
-    <comp lib="1" loc="(610,220)" name="NOR Gate">
-      <a name="facing" val="west"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="3" loc="(130,630)" name="Comparator"/>
-    <comp lib="0" loc="(580,670)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="clock"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(70,690)" name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0xf5"/>
-    </comp>
-    <comp lib="0" loc="(250,300)" name="Tunnel">
-      <a name="label" val="data"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="0" loc="(600,220)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="port"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="6" loc="(771,161)" name="Text">
-      <a name="text" val="RAM needs to know if we are reading data from one of the ports"/>
-    </comp>
-    <comp lib="0" loc="(80,670)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="addr"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="1" loc="(240,250)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="negate0" val="true"/>
-    </comp>
-    <comp lib="0" loc="(440,320)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="instr"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="1" loc="(740,360)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="label" val="IO-5"/>
-    </comp>
-    <comp lib="0" loc="(70,640)" name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0xf4"/>
-    </comp>
-    <comp lib="2" loc="(230,310)" name="Decoder">
-      <a name="disabled" val="0"/>
-    </comp>
-    <comp lib="0" loc="(780,350)" name="Tunnel">
-      <a name="label" val="rd_d"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="0" loc="(390,480)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="data"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="0" loc="(250,250)" name="Tunnel">
-      <a name="label" val="wr_d"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="0" loc="(250,340)" name="Tunnel">
-      <a name="label" val="rd/wr"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
-    </comp>
-    <comp lib="6" loc="(866,198)" name="Text">
+    <comp lib="6" loc="(577,36)" name="Text">
       <a name="text" val="Note: "/>
       <a name="font" val="SansSerif bold 12"/>
     </comp>
@@ -531,35 +534,32 @@ e3 6b 86 d1 f3 a6 ee
       <a name="label" val="rd/wr"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
+    <comp lib="1" loc="(680,500)" name="Controlled Buffer">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="1" loc="(240,210)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(320,360)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="width" val="8"/>
-      <a name="label" val="addr"/>
+    <comp lib="0" loc="(250,210)" name="Tunnel">
+      <a name="label" val="rd_d"/>
       <a name="labelfont" val="SansSerif plain 9"/>
     </comp>
-    <comp lib="0" loc="(460,470)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="clock"/>
-      <a name="labelfont" val="SansSerif plain 9"/>
+    <comp lib="6" loc="(785,161)" name="Text">
+      <a name="text" val="RAM needs to know if we are reading data from one of the ports"/>
     </comp>
-    <comp lib="6" loc="(587,161)" name="Text">
+    <comp lib="4" loc="(530,410)" name="RAM"/>
+    <comp lib="6" loc="(802,464)" name="Text">
       <a name="text" val="Note: "/>
       <a name="font" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(890,410)" name="Pin">
+    <comp lib="0" loc="(890,500)" name="Pin">
       <a name="facing" val="west"/>
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
-      <a name="label" val=" yball"/>
+      <a name="label" val=" vxy"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(716,44)" name="Text">
-      <a name="text" val="in the register and returned it to the controller "/>
-      <a name="valign" val="top"/>
     </comp>
   </circuit>
 </project>
